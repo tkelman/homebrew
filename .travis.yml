@@ -4,7 +4,7 @@ before_install:
 install:
   - rm -rf $(brew --repo)/Library/Formula
   - mv $PWD/Library/Formula $(brew --repo)/Library
-  - brew doctor
+  - brew doctor || echo oh well
 env:
   - PACKAGE=libgit2
 script:
