@@ -6,7 +6,7 @@ install:
   - mv $PWD/Library/Formula $(brew --repo)/Library
   - brew doctor || echo oh well
 env:
-  - PACKAGE=libgit2
+  - PACKAGE=libgit2-glib
 script:
   - brew audit $PACKAGE
   - brew install -v $PACKAGE
